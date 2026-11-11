@@ -67,7 +67,7 @@ void get_best_averade(const vector<IStudent> &students, IBestAverage &best_avera
 } 
 
 void print_table(const vector<IStudent> &students) {
-    cout << "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-" << endl;
+    cout << "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-" << endl;
 
     cout << setw(10) << "NOME"
         << setw(10) << "N1"
@@ -80,12 +80,12 @@ void print_table(const vector<IStudent> &students) {
         cout << setw(10) << students[i].name
             << setw(10) << students[i].grades[0]
             << setw(10) << students[i].grades[1]
-            << setw(10) << students[i].grades[0]
+            << setw(10) << students[i].grades[2]
             << setw(10) << calculate_average(students[i].grades)
             << setw(15) << (calculate_average(students[i].grades) >= 7 ? "Aprovado" : "Reprovado") << endl;
     }
 
-    cout << "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n" << endl;
+    cout << "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n" << endl;
 }
 
 int main()
