@@ -52,7 +52,7 @@ void get_credential(vector<IStudent> &students) {
     students.push_back(student);
 }
 
-void get_best_averade(const vector<IStudent> &students, IBestAverage &best_average) {
+void get_best_average(const vector<IStudent> &students, IBestAverage &best_average) {
     best_average.name = "";
     best_average.average = 0.0;
 
@@ -102,7 +102,7 @@ int main()
         get_credential(students);
     }
 
-    get_best_averade(students, best_average);
+    get_best_average(students, best_average);
 
     system("cls");
 
